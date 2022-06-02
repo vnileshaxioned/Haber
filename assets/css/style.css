@@ -180,16 +180,21 @@ nav li:nth-child(2):after {
 
 .display-none { display: none; }
 
+/* banner section started here */
+
 .banner .wrapper { 
   width: 100%;
   position: relative;
 }
 
+.banner img { width: auto; }
+
 h2 {
   position: absolute;
-  bottom: 1.2%;
+  bottom: 4.5%;
   width: 38%;
   color: #fff;
+  line-height: 34px;
   text-align: center;
   font-weight: bold;
   font-size: 34px;
@@ -208,12 +213,12 @@ h2 {
   transform: translateX(-50%);
 }
 
-.slider-action a {
+.banner .slider-action a {
   font-size: 30px;
   padding: 0;
 }
 
-.slider-action li {
+.banner .slider-action li {
   top: 39%;
   position: absolute;
 }
@@ -223,7 +228,148 @@ h2 {
 .slider-action li:nth-child(1) { left: 3.5%; }
 .slider-action li:nth-child(2) { right: 3.5%; }
 
+/* banner section ended here */
 
+/* our clients section started here */
+
+.our-clients .wrapper { padding: 6.8% 0; }
+
+.our-clients h3 {
+  font-size: 38px;
+  color: var(--tertiary-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+.our-clients .outter-box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5%;
+}
+
+.our-clients .inner-box {
+  flex-basis: 23%;
+  text-align: center;
+  position: relative;
+}
+
+.our-clients .inner-box p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #959596;
+  padding-bottom: 18px;
+}
+
+.our-clients .inner-box h3 {
+  font-size: 18px;
+  margin: 0 23% 9%;
+  font-family: 'FontAwesome';
+  float: right;
+  padding-top: 31%;
+  line-height: 24px;
+}
+
+.our-clients .inner-box h3::before {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 20px 16px;
+  font-size: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.our-clients .inner-box:nth-child(1) h3::before { content: '\f1f0'; }
+.our-clients .inner-box:nth-child(2) h3::before { content: '\f1f0'; }
+.our-clients .inner-box:nth-child(3) h3::before { content: '\f1f0'; }
+.our-clients .inner-box:nth-child(4) h3::before { content: '\f1f0'; }
+
+.read-more-button {
+  padding: 14px 16px;
+  color: var(--tertiary-color);
+  border: 1px solid #959596;
+}
+
+/* our clients section ended here */
+
+/* advice section started here */
+
+.advice .wrapper { padding: 6.3% 0 4.5%; }
+.advice { background-color: #E8EDF1;}
+
+.advice h3 {
+  font-size: 38px;
+  color: var(--tertiary-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+.advice p {
+  font-size: 20px;
+  color: var(--tertiary-color);
+  line-height: 32px;
+  padding: 19px 0;
+  text-align: center;
+}
+
+.advice .outter-box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+
+.advice .inner-box {
+  padding: 8px 8px 40px;
+  background-color: #fff;
+  width: 30%;
+  text-align: center;
+}
+
+.advice img { width: auto; }
+
+.advice h4 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding-top: 11%;
+}
+
+.advice .inner-box p {
+  font-size: 12px;
+  width: 80%;
+  line-height: 22px;
+  color: #B6BAB7;
+  margin: 0 auto;
+  padding: 9px 0 10px 0;
+}
+
+.advice .inner-box a {
+  text-indent: -9999px;
+  font-size: 11px;
+}
+
+.advice .inner-box a::before {
+  font-family: 'fontAwesome';
+  text-indent: 0;
+  color: var(--secondary-color);
+  float: right;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  padding: 2px 3px;
+}
+
+.advice .inner-box:nth-child(1) a::before { content: '\f061'; }
+.advice .inner-box:nth-child(2) a::before { content: '\f061'; }
+.advice .inner-box:nth-child(3) a::before { content: '\f061'; }
+
+/* advice section ended here */
+
+/* investment tips section started here */
+
+
+
+/* investment tips section ended here */
 
 
 
