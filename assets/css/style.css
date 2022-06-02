@@ -100,16 +100,59 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 92.6%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+:root {
+  --primary-color: #DC6226;
+  --secondary-color: #404B52;
+  --tertiary-color: #525C63;
+  --header-icon-color: #808C94;
+}
 
+header {
+  background-color: var(--secondary-color);
+}
 
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+h1 { font-size: 0; }
+nav { flex-basis: 54.5%; }
+
+nav a {
+  padding: 17px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.social-icon a {
+  text-indent: -9999px;
+  display: block;
+  font-size: 24px;
+  padding-left: 12px;
+}
+
+.social-icon a::before {
+  font-family: 'fontAwesome';
+  text-indent: 0;
+  color: var(--header-icon-color);
+  float: right;
+}
+
+.social-icon li:nth-child(1) a::before { content: '\f081'; }
+.social-icon li:nth-child(2) a::before { content: '\f167'; }
+.social-icon li:nth-child(3) a::before { content: '\f09e'; }
+.social-icon li:nth-child(4) a::before { content: '\f082'; }
+.social-icon li:nth-child(5) a::before { content: '\f0d4'; }
 
 
 /*=================================
