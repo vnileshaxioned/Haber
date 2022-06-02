@@ -134,6 +134,20 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover { color: var(--primary-color); }
+
+nav li:nth-child(2):after {
+  content: '\f0d7';
+  font-family: 'fontAwesome';
+  text-indent: 0;
+  font-size: 12px;
+  color: var(--primary-color);
+  float: right;
+  position: absolute;
+  top: 9.5%;
+  left: 35.3%;
+}
+
 .social-icon a {
   text-indent: -9999px;
   display: block;
