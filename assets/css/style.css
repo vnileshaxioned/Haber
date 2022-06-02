@@ -148,6 +148,7 @@ nav li:nth-child(2):after {
   left: 35.3%;
 }
 
+.slider-action a,
 .social-icon a {
   text-indent: -9999px;
   display: block;
@@ -155,6 +156,7 @@ nav li:nth-child(2):after {
   padding-left: 12px;
 }
 
+.slider-action a::before,
 .social-icon a::before {
   font-family: 'fontAwesome';
   text-indent: 0;
@@ -168,7 +170,6 @@ nav li:nth-child(2):after {
 .social-icon li:nth-child(4) a::before { content: '\f082'; }
 .social-icon li:nth-child(5) a::before { content: '\f0d4'; }
 
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -177,7 +178,50 @@ nav li:nth-child(2):after {
   main styling starts here
 =================================*/
 
+.display-none { display: none; }
 
+.banner .wrapper { 
+  width: 100%;
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  bottom: 1.2%;
+  width: 38%;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.banner .slider-action {
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  width: 48%;
+  padding: 4.3% 3.6%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-action a {
+  font-size: 30px;
+  padding: 0;
+}
+
+.slider-action li {
+  top: 39%;
+  position: absolute;
+}
+.slider-action a::before { color: #fff; }
+.slider-action li:nth-child(1) a::before { content: '\f053'; }
+.slider-action li:nth-child(2) a::before { content: '\f054'; }
+.slider-action li:nth-child(1) { left: 3.5%; }
+.slider-action li:nth-child(2) { right: 3.5%; }
 
 
 
