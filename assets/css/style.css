@@ -114,6 +114,7 @@ li {
   --header-icon-color: #808C94;
 }
 
+.container { position: relative; }
 .hamburger { display: none; }
 .close-nav { display: none; }
 
@@ -627,6 +628,14 @@ h6 span {
 .footer-social-icon li:nth-child(5) a::before { content: '\f082'; }
 .footer-social-icon li:nth-child(6) a::before { content: '\f0d4'; }
 
+.to-the-top {
+  position: fixed;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+  right: 4%;
+  bottom: 4%;
+}
 
 
 
