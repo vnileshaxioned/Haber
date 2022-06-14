@@ -297,6 +297,12 @@ h2 {
 
 .advice .wrapper { padding: 6.3% 0 4.5%; }
 .advice { background-color: #E8EDF1;}
+.advice-deactivated { display: none; }
+
+.advice-activated {
+  display: block;
+  transition: all .3s ease;
+}
 
 .advice h3 {
   font-size: 38px;
