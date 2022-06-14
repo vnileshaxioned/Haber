@@ -638,7 +638,7 @@ h6 span {
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   header .social-icon { display: none; }
-  .nav-hide { display: none; }
+  /* .nav-hide { display: none; } */
 
   .hamburger {
     display: block;
@@ -668,6 +668,21 @@ h6 span {
     top: 0;
     left: 0;
     background-color: #000;
+  }
+
+  .close-nav {
+    display: block;
+    text-indent: -9999px;
+  }
+
+  .close-nav::before {
+    content: '\f057';
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    float: right;
+    margin-right: 15px;
+    color: #fff;
+    text-indent: 0;
   }
 
   .menu-list {
