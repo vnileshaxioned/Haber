@@ -114,6 +114,8 @@ li {
   --header-icon-color: #808C94;
 }
 
+.hamburger { display: none; }
+
 header {
   background-color: var(--secondary-color);
 }
@@ -210,7 +212,7 @@ h2 {
   font-size: 34px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
+  z-index: 1;
 }
 
 .banner .slider-action {
@@ -633,9 +635,48 @@ h6 span {
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  header .social-icon { display: none; }
+  .nav-hide { display: none; }
 
+  .hamburger {
+    display: block;
+    text-indent: -9999px;
+  }
+  
+  .hamburger::after {
+    content: '\f0c9';
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    float: right;
+    margin-right: 15px;
+    color: #fff;
+    text-indent: 0;
+  }
 
+  .nav-menu {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    z-index: 2;
+  }
 
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+  }
+
+  .menu-list {
+    padding: 33% 0;
+    display: flex;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }  
