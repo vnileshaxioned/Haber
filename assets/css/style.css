@@ -134,9 +134,21 @@ nav a {
   font-weight: bold;
 }
 
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--secondary-color);
+  z-index: 1;
+  width: 100%;
+}
+
+.menu { position: relative; }
+.dropdown-deactived { display: none; }
+
 nav a:hover { color: var(--primary-color); }
 
-nav li:nth-child(2):after {
+nav .menu:nth-child(2):after {
   content: '\f0d7';
   font-family: 'FontAwesome';
   text-indent: 0;
@@ -144,8 +156,8 @@ nav li:nth-child(2):after {
   color: var(--primary-color);
   float: right;
   position: absolute;
-  top: 9.5%;
-  left: 35.3%;
+  bottom: 0;
+  left: 35px;
 }
 
 .slider-action a,
