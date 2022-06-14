@@ -115,6 +115,7 @@ li {
 }
 
 .hamburger { display: none; }
+.close-nav { display: none; }
 
 header {
   background-color: var(--secondary-color);
