@@ -681,17 +681,21 @@ h6 span {
   }
 
   .close-nav {
+    padding: 0;
     display: block;
+    font-size: 0;
     text-indent: -9999px;
   }
 
   .close-nav::before {
     content: '\f057';
+    position: absolute;
+    top: 40px;
+    right: 10%;
+    color: #fff;
     font-family: 'FontAwesome';
     font-size: 30px;
     float: right;
-    margin-right: 15px;
-    color: #fff;
     text-indent: 0;
   }
 
