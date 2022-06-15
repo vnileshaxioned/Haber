@@ -7,28 +7,19 @@ function comman(id_first, id_second, target, fn_name) {
         document.getElementById(id_second).classList.toggle(target);
     }
 }
-
+//  for dropdown
 comman('dropdown', 'show-drop', 'dropdown-deactived', 'dropdown');
-
+// for hamburger
 comman('hamburger', 'show-nav', 'nav-hide', 'showNav');
-
+// for navbar close
 comman('close-nav', 'show-nav', 'nav-hide', 'closeNav');
 
+// for top button
 var scroll = document.querySelector('.to-the-top');
-window.addEventListener('scroll', () => {
-    scroll.classList.toggle("active", window.scrollY > 500);
-    if (scroll.classList.contains("active")) {
-        scroll.style.visibility = "visible";
-        scroll.style.opacity = 1;
-        scroll.style.transition = "all .3s ease";
-    } else {
-        scroll.style.visibility = "hidden";
-        scroll.style.opacity = 0;
-    }
-});
+window.addEventListener('scroll', () => scroll.classList.toggle('top-active', window.scrollY > 500));
 
+// for accordian
 var expands = document.querySelectorAll('.gear-icon');
-
 expands.forEach(expand => {
     expand.addEventListener('click', show);
     expand.style.cursor = "pointer";
