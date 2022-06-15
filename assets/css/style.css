@@ -654,9 +654,7 @@ h6 span {
   header .social-icon { display: none; }
 
   .nav-hide {
-    visibility: hidden;
-    opacity: 0;
-    left: 100%;
+    transform: translateX(100%);
     transition: all .3s ease;
   }
 
@@ -683,13 +681,16 @@ h6 span {
   }
 
   nav {
-    width: 100%;
+    width: 50%;
     position: fixed;
     visibility: visible;
     opacity: 1;
     top: 0;
-    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(0);
     background-color: #000;
+    transition: all .3s ease;
   }
 
   .close-nav {
