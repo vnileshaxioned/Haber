@@ -114,6 +114,7 @@ li {
   --header-icon-color: #808C94;
 }
 
+html { scroll-behavior: smooth; }
 .container { position: relative; }
 .hamburger { display: none; }
 .close-nav { display: none; }
@@ -419,7 +420,10 @@ h2 {
   padding: 8px 0;
 }
 
-.investment-solutions p { font-size: 18px; }
+.investment-solutions p { 
+  font-size: 18px;
+  transition: all .3s ease;
+}
 
 .gear-icon::before {
   content: '\f013';
@@ -648,7 +652,12 @@ h6 span {
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   header .social-icon { display: none; }
-  .nav-hide { display: none; }
+
+  .nav-hide {
+    display: none;
+    left: 100%;
+    transition: all .3s ease;
+  }
 
   .hamburger {
     display: block;
